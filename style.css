@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Navbar */
+
+nav {
+    background-color: #1e3a8a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 10%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+
+/* Container */
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+}
+
+
+/* Profile */
+
+.profile {
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.profile img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #1e3a8a;
+}
+
+.profile h1 {
+    margin-top: 20px;
+}
+
+.profile h3 {
+    color: #555;
+    margin: 10px 0;
+}
+
+.profile p {
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.7;
+}
+
+
+/* Button */
+
+.button {
+    display: inline-block;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #2563eb;
+}
+
+
+/* Card */
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+}
+
+
+/* List */
+
+.list {
+    margin-left: 30px;
+    line-height: 2;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .profile {
+        padding: 25px;
+    }
+}
